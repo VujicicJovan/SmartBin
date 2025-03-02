@@ -15,7 +15,7 @@
         android:contentDescription="@null" />
 
     <TextView
-        android:id="@+id/dobrodoslinazad"
+        android:id="@+id/predloziNovuAnketu"
         android:layout_width="297dp"
         android:layout_height="30dp"
         android:layout_gravity="center_horizontal"
@@ -28,7 +28,7 @@
         android:gravity="center"/>
 
     <TextView
-        android:id="@+id/pogledajteanketu"
+        android:id="@+id/pitanje"
         android:layout_width="325dp"
         android:layout_height="48dp"
         android:layout_gravity="center_horizontal"
@@ -40,7 +40,7 @@
         android:gravity="center"/>
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/boxPitanje"
         android:layout_width="374dp"
         android:layout_height="66dp"
         android:layout_gravity="center_horizontal"
@@ -93,7 +93,7 @@
         app:layout_constraintVertical_bias="0.1" />
 
     <Button
-        android:id="@+id/btnLogin"
+        android:id="@+id/btnPosaljiPredlog"
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_gravity="center_horizontal"

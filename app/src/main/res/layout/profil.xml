@@ -29,7 +29,7 @@
             android:background="@drawable/rounded_rectangle"/>
 
         <Button
-            android:id="@+id/btnNapNal"
+            android:id="@+id/btnOdjava"
             android:layout_width="118dp"
             android:layout_height="48dp"
             android:layout_marginTop="32dp"
@@ -61,6 +61,29 @@
         android:background="#62925F"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="336dp"/>
+
+    <TextView
+        android:id="@+id/ime"
+        android:layout_width="95dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="163dp"
+        android:text="Sofija"
+        android:layout_marginTop="376dp"
+        android:textColor="#62925F"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:elevation="10dp"/>
+
+    <TextView
+        android:layout_marginStart="163dp"
+        android:id="@+id/prezime"
+        android:layout_width="88dp"
+        android:layout_height="24dp"
+        android:text="Marković"
+        android:layout_marginTop="418dp"
+        android:textColor="#62925F"
+        android:textSize="20sp"
+        android:elevation="10dp"/>
 
     <ImageView
         android:id="@+id/poljezabodove"

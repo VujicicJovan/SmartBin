@@ -24,7 +24,7 @@
         android:layout_gravity="center_horizontal"/>
 
     <TextView
-        android:id="@+id/dobrodoslinazad"
+        android:id="@+id/napraviteNalog"
         android:layout_width="325dp"
         android:layout_height="96dp"
         android:layout_gravity="center_horizontal"
@@ -113,7 +113,7 @@
         app:layout_constraintVertical_bias="0.1" />
 
     <Button
-        android:id="@+id/btnLogin"
+        android:id="@+id/btnZavrsite"
         android:layout_width="368dp"
         android:layout_height="66dp"
         android:layout_gravity="center_horizontal"
@@ -125,7 +125,7 @@
         android:textColor="#FFFFFF"/>
 
     <Button
-        android:id="@+id/btnNemNalog"
+        android:id="@+id/btnImamNalog"
         android:layout_width="wrap_content"
         android:layout_height="66dp"
         android:text="Imate nalog\nKliknite da se ulogujete"

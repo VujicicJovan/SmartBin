@@ -15,7 +15,7 @@
         android:contentDescription="@null" />
 
     <TextView
-        android:id="@+id/dobrodoslinazad"
+        android:id="@+id/pitanje"
         android:layout_width="239dp"
         android:layout_height="48dp"
         android:layout_gravity="center_horizontal"
@@ -61,7 +61,7 @@
             android:elevation="4dp"/>
 
         <Button
-            android:id="@+id/btnLogin"
+            android:id="@+id/btnRangLista"
             android:layout_width="250dp"
             android:layout_height="54dp"
             android:layout_gravity="center"
@@ -90,7 +90,7 @@
             android:background="@drawable/rounded_rectangle"/>
 
         <Button
-            android:id="@+id/btnNapNal"
+            android:id="@+id/btnPredAnketu"
             android:layout_width="206dp"
             android:layout_height="32dp"
             android:layout_centerInParent="true"

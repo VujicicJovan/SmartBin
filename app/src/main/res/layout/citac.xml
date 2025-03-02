@@ -14,8 +14,26 @@
         android:background="@drawable/rounded_square"
         android:contentDescription="@null" />
 
+    <ImageView
+        android:id="@+id/okvirPovezivanje"
+        android:layout_width="266dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="502dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/dashed_border"
+        android:contentDescription="@null"/>
 
-
+    <TextView
+        android:id="@+id/povezivanje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Povezivanje..."
+        android:layout_marginTop="518dp"
+        android:textColor="#62925F"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:elevation="10dp"/>
     <TextView
         android:layout_marginStart="52dp"
         android:id="@+id/tekst1"
@@ -27,7 +45,7 @@
         android:textColor="#62925F"
         android:textSize="20sp"
         android:elevation="10dp"
-        android:gravity="center"/>
+        android:gravity="start"/>
 
     <TextView
         android:layout_marginStart="52dp"
@@ -35,12 +53,12 @@
         android:layout_width="301dp"
         android:layout_height="72dp"
         android:layout_gravity="center_horizontal"
-        android:text="Približite poleđinu telefona\nmestu na kanti označenom\nNFC simbolom"
+        android:text="Držite telefon mirno dok se ne\npojavi potvrda očitavanja"
         android:layout_marginTop="299dp"
         android:textColor="#62925F"
         android:textSize="20sp"
         android:elevation="10dp"
-        android:gravity="center"/>
+        android:gravity="start"/>
 
     <TextView
         android:layout_marginStart="52dp"
@@ -48,12 +66,12 @@
         android:layout_width="301dp"
         android:layout_height="72dp"
         android:layout_gravity="center_horizontal"
-        android:text="Približite poleđinu telefona\nmestu na kanti označenom\nNFC simbolom"
+        android:text="Ako se ništa ne desi, proverite\nda li je NFC uključen u\npodešavanjima telefona"
         android:layout_marginTop="387dp"
         android:textColor="#62925F"
         android:textSize="20sp"
         android:elevation="10dp"
-        android:gravity="center"/>
+        android:gravity="start"/>
 
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -70,7 +88,7 @@
             android:background="@drawable/rounded_rectangle"/>
 
         <Button
-            android:id="@+id/btnNapNal"
+            android:id="@+id/btnPrekinitePovezivanje"
             android:layout_width="206dp"
             android:layout_height="32dp"
             android:layout_centerInParent="true"
