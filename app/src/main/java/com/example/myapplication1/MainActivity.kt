@@ -1,51 +1,42 @@
-package com.example.myapplication1;
+package com.example.myapplication1
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-
-import androidx.activity.EdgeToEdge;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
-
-public class MainActivity extends AppCompatActivity {
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.dobrodosli);
-        EdgeToEdge.enable(this);
+import android.R
+import android.os.Bundle
+import android.view.View
+import androidx.appcompat.app.AppCompatActivity
+import androidx.compose.foundation.layout.*
+import androidx.compose.material.*
+import androidx.compose.runtime.*
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.google.android.material.navigation.NavigationBarView
 
 
-        Button btnLogIn = (Button) findViewById(R.id.btnLogin);
-        Button btnSingUp = (Button) findViewById(R.id.btnNapNal);
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.promeni_anketu)
 
+        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_navigation)
+        val fabScan = findViewById<FloatingActionButton>(R.id.fab_scan)
 
-        if (btnLogIn != null && btnSingUp != null) {
+        bottomNavigationView.setOnItemSelectedListener(NavigationBarView.OnItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.nav_home ->                         // TODO: Load Home Fragment
+                    return@OnItemSelectedListener true
 
-            btnLogIn.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent LogInOpen = new Intent(MainActivity.this, LogIn.class);                    startActivity(LogInOpen);
-                }
-            });
+                R.id.nav_survey ->                         // TODO: Load Survey Fragment
+                    return@OnItemSelectedListener true
 
-            btnSingUp.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent SignupOpen = new Intent(MainActivity.this, SignUp.class);
-                    startActivity(SignupOpen);
-                }
-            });
-        }
+                R.id.nav_ranking ->                         // TODO: Load Ranking Fragment
+                    return@OnItemSelectedListener true
 
+                R.id.nav_profile ->                         // TODO: Load Profile Fragment
+                    return@OnItemSelectedListener true
+            }
+            false
+        })
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+        fabScan.setOnClickListener { v: View? -> }
     }
 }

@@ -27,6 +27,15 @@
         android:elevation="10dp"
         android:gravity="center"/>
 
+    <ImageView
+        android:id="@+id/profilna"
+        android:layout_width="147dp"
+        android:layout_height="147dp"
+        android:layout_marginTop="202dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/skeniraj_upustvo"
+        android:contentDescription="@null" />
+
     <TextView
         android:id="@+id/pogledajteanketu"
         android:layout_width="325dp"
@@ -75,18 +84,18 @@
         android:layout_gravity="center_horizontal">
 
         <ImageView
-            android:id="@+id/okvir"
-            android:layout_width="300dp"
-            android:layout_height="66dp"
+            android:id="@+id/okvir2"
+            android:layout_width="289dp"
+            android:layout_height="67dp"
             android:background="@drawable/pravljenjenalogadugme"
             android:layout_centerInParent="true"/>
 
         <Button
-            android:id="@+id/btnAdminPristup"
-            android:layout_width="292dp"
-            android:layout_height="58dp"
+            android:id="@+id/btnPredloziAnketa"
+            android:layout_width="281dp"
+            android:layout_height="59dp"
             android:text="Admin pristup"
-            android:textSize="22sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:translationZ="10dp"
             android:background="@drawable/logindugme"
@@ -105,7 +114,7 @@
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_marginTop="820dp"
+        android:layout_gravity="bottom|center_horizontal"
         android:background="?android:attr/windowBackground"
         app:menu="@menu/bottom_menu" />
 </FrameLayout>

@@ -93,9 +93,8 @@
         android:layout_height="66dp"
         android:text="Nemate nalog\nKliknite da napravite nalog"
         android:textColor="#9AD98E"
-        android:layout_gravity="center_horizontal"
+        android:layout_gravity="bottom|center_horizontal"
         android:textSize="15sp"
-        android:layout_marginTop="780dp"
         android:background="@android:color/transparent"/>
 
 

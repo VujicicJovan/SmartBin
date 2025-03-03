@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.MyApplication1" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="Theme.MyApplication1" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="floatingActionButtonStyle">@style/CustomFAB</item>
+    </style>
+
+    <style name="CustomFAB" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="rippleColor">@android:color/transparent</item>
+    </style>
+
 </resources>

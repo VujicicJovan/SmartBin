@@ -18,7 +18,8 @@
         android:id="@+id/rang"
         android:layout_width="95dp"
         android:layout_height="48dp"
-        android:layout_marginStart="51dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="-131dp"
         android:text="Rang"
         android:layout_marginTop="183dp"
         android:textColor="#24502B"
@@ -26,11 +27,21 @@
         android:textStyle="bold"
         android:elevation="10dp"/>
 
+    <ImageView
+        android:id="@+id/trofej"
+        android:layout_width="113dp"
+        android:layout_height="114dp"
+        android:layout_marginTop="149dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/trofej"
+        android:contentDescription="@null" />
+
     <TextView
         android:id="@+id/lista"
         android:layout_width="95dp"
         android:layout_height="48dp"
-        android:layout_marginStart="284dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="122dp"
         android:text="Lista"
         android:layout_marginTop="183dp"
         android:textColor="#24502B"
@@ -45,11 +56,73 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="282dp"/>
 
+    <ImageView
+        android:id="@+id/profilna1"
+        android:layout_width="63dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="-108dp"
+        android:layout_marginTop="319dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/profil_cokili"
+        android:contentDescription="@null" />
+
+    <ImageView
+        android:id="@+id/profilna2"
+        android:layout_width="63dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="-108dp"
+        android:layout_marginTop="424dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/profil_noc"
+        android:contentDescription="@null" />
+
+    <ImageView
+        android:id="@+id/profilna3"
+        android:layout_width="63dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="-108dp"
+        android:layout_marginTop="529dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/profil_pile"
+        android:contentDescription="@null" />
+
+    <ImageView
+        android:id="@+id/kruna1"
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="-163dp"
+        android:layout_marginTop="319dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/zlatna"
+        android:contentDescription="@null" />
+
+    <ImageView
+        android:id="@+id/kruna2"
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="-163dp"
+        android:layout_marginTop="424dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/srebrna"
+        android:contentDescription="@null" />
+
+    <ImageView
+        android:id="@+id/kruna3"
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="-163dp"
+        android:layout_marginTop="539dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bronzana"
+        android:contentDescription="@null" />
+
     <TextView
         android:id="@+id/imePrvog"
-        android:layout_width="95dp"
+        android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:layout_marginStart="168dp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="-5dp"
         android:text="Sofija"
         android:layout_marginTop="322dp"
         android:textColor="#62925F"
@@ -58,11 +131,13 @@
         android:elevation="10dp"/>
 
         <TextView
-        android:layout_marginStart="168dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="-4dp"
         android:id="@+id/prezime1"
-        android:layout_width="88dp"
+        android:layout_width="match_parent"
         android:layout_height="24dp"
         android:text="Marković"
+        android:gravity="center"
         android:layout_marginTop="358dp"
         android:textColor="#62925F"
         android:textSize="20sp"
@@ -73,26 +148,31 @@
         android:layout_width="93dp"
         android:layout_height="69dp"
         android:layout_marginTop="319dp"
-        android:layout_marginStart="304dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="144dp"
         android:background="@drawable/poljezabodove"/>
 
     <TextView
         android:id="@+id/brpoena1"
-        android:layout_width="51dp"
+        android:layout_width="match_parent"
         android:layout_height="35dp"
-        android:layout_marginStart="328dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="144dp"
         android:text="152"
         android:layout_marginTop="336dp"
         android:textColor="#24502B"
         android:textSize="25sp"
+        android:gravity="center"
         android:textStyle="bold"
         android:elevation="10dp"/>
 
     <TextView
         android:id="@+id/imeDrugog"
-        android:layout_width="95dp"
+        android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:layout_marginStart="168dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="-5dp"
+        android:gravity="center"
         android:text="Miloš"
         android:layout_marginTop="427dp"
         android:textColor="#62925F"
@@ -105,27 +185,31 @@
         android:layout_width="93dp"
         android:layout_height="69dp"
         android:layout_marginTop="424dp"
-        android:layout_marginStart="304dp"
-        android:background="@drawable/poljezabodove"/>
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="144dp"        android:background="@drawable/poljezabodove"/>
 
     <TextView
         android:id="@+id/brpoena2"
-        android:layout_width="51dp"
+        android:layout_width="match_parent"
         android:layout_height="35dp"
-        android:layout_marginStart="328dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="144dp"
         android:text="107"
         android:layout_marginTop="441dp"
         android:textColor="#24502B"
         android:textSize="25sp"
+        android:gravity="center"
         android:textStyle="bold"
         android:elevation="10dp"/>
 
     <TextView
-        android:layout_marginStart="168dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="-4dp"
         android:id="@+id/prezime2"
-        android:layout_width="86dp"
+        android:layout_width="match_parent"
         android:layout_height="24dp"
         android:text="Rašković"
+        android:gravity="center"
         android:layout_marginTop="463dp"
         android:textColor="#62925F"
         android:textSize="20sp"
@@ -136,14 +220,15 @@
         android:layout_width="93dp"
         android:layout_height="69dp"
         android:layout_marginTop="529dp"
-        android:layout_marginStart="304dp"
-        android:background="@drawable/poljezabodove"/>
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="144dp"        android:background="@drawable/poljezabodove"/>
 
     <TextView
         android:id="@+id/brpoena3"
-        android:layout_width="50dp"
+        android:layout_width="match_parent"
         android:layout_height="35dp"
-        android:layout_marginStart="326dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="144dp"
         android:text="48"
         android:layout_marginTop="542dp"
         android:textColor="#24502B"
@@ -154,10 +239,12 @@
 
     <TextView
         android:id="@+id/imeTreceg"
-        android:layout_width="95dp"
+        android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:layout_marginStart="168dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="-5dp"
         android:text="Ivan"
+        android:gravity="center"
         android:layout_marginTop="532dp"
         android:textColor="#62925F"
         android:textSize="30sp"
@@ -165,18 +252,20 @@
         android:elevation="10dp"/>
 
     <TextView
-        android:layout_marginStart="168dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="-4dp"
         android:id="@+id/prezime3"
-        android:layout_width="79dp"
+        android:layout_width="match_parent"
         android:layout_height="24dp"
         android:text="Petrović"
+        android:gravity="center"
         android:layout_marginTop="568dp"
         android:textColor="#62925F"
         android:textSize="20sp"
         android:elevation="10dp"/>
 
     <TextView
-        android:layout_marginStart="47dp"
+        android:layout_gravity="center_horizontal"
         android:id="@+id/opis"
         android:layout_width="326dp"
         android:layout_height="50dp"
@@ -201,7 +290,7 @@
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_marginTop="820dp"
+        android:layout_gravity="bottom|center_horizontal"
         android:background="?android:attr/windowBackground"
         app:menu="@menu/bottom_menu" />
 </FrameLayout>
