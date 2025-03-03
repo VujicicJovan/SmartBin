@@ -1,27 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/nav_home"
+        android:id="@+id/home"
         android:icon="@drawable/home"
-        android:title="Početna"/>
-
+        android:title="Home" />
     <item
-        android:id="@+id/nav_survey"
-        android:icon="@drawable/anketa"
-        android:title="Anketa"/>
-
-    <item
-        android:id="@+id/nav_scan"
-        android:icon="@drawable/skeniraj"
-        android:title="Skeniraj"/>
-
-    <item
-        android:id="@+id/nav_ranking"
+        android:id="@+id/statistika"
         android:icon="@drawable/toplista"
-        android:title="Rang lista"/>
-
+        android:title="Statistika" />
     <item
-        android:id="@+id/nav_profile"
+        android:id="@+id/toplista"
+        android:icon="@drawable/toplista"
+        android:title="Toplista" />
+    <item
+        android:id="@+id/user"
         android:icon="@drawable/user"
-        android:title="Profil"/>
+        android:title="Profil" />
 </menu>
