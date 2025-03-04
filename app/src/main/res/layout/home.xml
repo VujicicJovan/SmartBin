@@ -28,6 +28,24 @@
         android:gravity="center"/>
 
     <ImageView
+        android:id="@+id/okvir"
+        android:layout_width="222dp"
+        android:layout_height="222dp"
+        android:layout_marginTop="232dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/pravljenjenalogadugme"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:id="@+id/okvir2"
+        android:layout_width="212dp"
+        android:layout_height="212dp"
+        android:layout_marginTop="237dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/rounded_square"
+        android:contentDescription="@null" />
+
+    <ImageView
         android:id="@+id/profilna"
         android:layout_width="147dp"
         android:layout_height="147dp"
@@ -89,16 +107,15 @@
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
     <ImageView
-        android:id="@+id/icon_home"
+        android:id="@+id/home"
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:src="@drawable/home"
-        android:layout_gravity="bottom|start"
+        android:layout_marginStart="-153dp"
+        android:layout_gravity="bottom|center_horizontal"
         android:layout_marginBottom="30dp"
-        android:layout_marginStart="40dp"
-        android:tint="@color/green" />
+        android:translationZ="5dp" />
 
-    <!-- Osigurano da se ne pomera na većim ekranima -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
@@ -108,39 +125,34 @@
         android:background="@drawable/rounded_button"
         android:src="@drawable/skeniraj" />
 
-
-    <!-- Precizno pozicioniranje ikona na navigaciji -->
     <ImageView
-        android:id="@+id/icon_home"
+        android:id="@+id/icon_tren"
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:src="@drawable/home2"
-        android:layout_gravity="bottom|start"
+        android:layout_marginStart="-153dp"
+        android:layout_gravity="bottom|center_horizontal"
         android:layout_marginBottom="30dp"
-        android:layout_marginStart="40dp"
-        android:tint="@color/green"
         android:translationZ="5dp" />
 
     <ImageView
         android:id="@+id/icon_toplista"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:layout_gravity="bottom|center"
-        android:layout_marginBottom="30dp"
-        android:layout_marginEnd="-70dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:src="@drawable/toplista"
-        android:tint="@color/green"
-        android:translationZ="5dp"/>
+        android:layout_marginStart="69.5dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:translationZ="5dp" />
 
     <ImageView
         android:id="@+id/icon_anketa"
         android:layout_width="24dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_marginRight="260dp"
-        android:layout_marginBottom="30dp"
+        android:layout_height="24dp"
         android:src="@drawable/anketa"
-        android:tint="@color/green"
+        android:layout_marginStart="-68dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="30dp"
         android:translationZ="5dp" />
 
     <ImageView
@@ -148,10 +160,9 @@
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:src="@drawable/user"
-        android:layout_gravity="bottom|end"
+        android:layout_marginStart="153dp"
+        android:layout_gravity="bottom|center_horizontal"
         android:layout_marginBottom="30dp"
-        android:layout_marginEnd="40dp"
-        android:tint="@color/green"
         android:translationZ="5dp" />
 
 
